@@ -1,0 +1,49 @@
+{
+  "name": "frontendframework-tailwind",
+  "version": "0.1.0",
+  "description": "Frontendframework ",
+  "main": "dist/index.html",
+  "repository": "https://github.com/zappatero/frontendframework-tailwind.git",
+  "bugs": {
+    "url": "https://github.com/zappatero/frontendframework-tailwind/issues"
+  },
+  "author": "zappatero",
+  "homepage": "https://github.com/zappatero/frontendframework-tailwind#readme",
+  "private": "false",
+  "license": "All Rights ReservedCC0 1.0 Universal",
+  "keywords": [
+    "frontend-framework",
+    "tailwindcss",
+    "boilerplate",
+    "gulp",
+    "postcss",
+    "imagemin",
+    "nunjucks",
+    "browsersync"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=prod gulp build",
+    "clean": "gulp cleanDir",
+    "html": "gulp htmlComp",
+    "css": "gulp cssComp",
+    "js": "gulp jsComp",
+    "images": "gulp imagesComp",
+    "assets": "gulp assetsCopy"
+  }
+}

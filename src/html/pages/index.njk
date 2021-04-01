@@ -1,0 +1,30 @@
+{% extends "layout-main.njk" %}
+
+{% set pageTitle = "Welcome Page" %}
+
+{% block content %}
+
+<div class="flex items-center justify-center h-screen">
+    <div class="h-auto mx-auto w-3/4">
+        <h1 class="text-5xl py-6 text-center font-bold text-gray-900">
+            Gulp Frontend Framework for Tailwind CSS projects 
+        </h1>
+        <p class="text-center p-6 text-lg">
+            Frontend Framework build on gulpjs (https://gulpjs.com) to provide the toolset needed by any frontend engineer.<br>
+            The framework bare-bones HTML templates based on the nunjucks template engine (https://mozilla.github.io/nunjucks/)
+            and Tailwind CSS (https://tailwindcss.com).<br><br>
+            The framework allows local dev with browser live preview 
+            based on browsersync. It compiles (PostCSS) tailwind according
+            the config and minify the compiled css and javascripts for 
+            production environments. Images will size-optimized with imaginmin.
+        </p>
+        <p class="text-center p-6 text-lg">
+            <a href="https://github.com/zappatero/frontendframework-tailwind.git">Download or clone: <strong>https://github.com/zappatero/frontendframework-tailwind.git</strong></a>
+        </p>
+        <p class="mx-auto p-6 text-center text-sm">
+            {% include "partial.license.njk" %}
+        </p>
+    </div>
+</div>
+
+{% endblock %}
